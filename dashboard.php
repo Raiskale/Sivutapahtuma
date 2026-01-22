@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 require "db.php";
 
 if (!isset($_SESSION["user"])) {
@@ -42,7 +44,8 @@ if (isset($_POST['upload'])) {
             $error = "Vain JPG, PNG ja WEBP kuvat sallitaan.";
         } else {
             $newName = uniqid("profile_") . "." . $ext;
-            $destination = "uploads/" . $newName;
+            $destination = __DIR__ . "/uploads/" . $newName;
+
 
             if (move_uploaded_file($_FILES['profile_pic']['tmp_name'], $destination)) {
 
@@ -135,7 +138,7 @@ if (isset($_POST['update_participation'])) {
 </head>
 <body>
 
-<?php include "src/header.php"; ?>
+<?php include "header.php"; ?>
 
 <div class="dashboard-wrapper">
 <div class="dashboard-container">

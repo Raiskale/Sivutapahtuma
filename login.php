@@ -1,5 +1,7 @@
 <?php
-session_start();
+
+    session_start();
+
 require "db.php";
 
 $error = "";
@@ -38,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 
-<?php include "src/header.php"; ?>
+<?php include "header.php"; ?>
 
 <div class="auth-wrapper">
     <div class="auth-box">

@@ -13,10 +13,10 @@
 </head>
 <body>
 
-<?php include 'src/header.php'; ?>
-<?php include 'src/front.php'; ?>
-<?php include 'src/info.php'; ?>
-<?php include 'src/kolmas.php'; ?>
+<?php include 'header.php'; ?>
+<?php include 'front.php'; ?>
+<?php include 'info.php'; ?>
+<?php include 'kolmas.php'; ?>
 
 <footer class="site-footer">
     <div class="footer-content">

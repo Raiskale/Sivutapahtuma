@@ -1,9 +1,11 @@
-<?php session_start(); ?>
+<?php
+session_start();
+?>
 
 <header class="header">
     <div class="logo">
         <a href="index.php">
-            <img src="Public/bubel.png" alt="">
+            <img src="public/bubel.png" alt="">
             Toripäivä
         </a>
     </div>
