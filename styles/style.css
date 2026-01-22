@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* päävarit asetettuna nii pystyy helpommin vaihtaa väriteemaa jos tarvitsisi */
 :root {
     --color-background: #f9f9f9;
     --color-surface: #ffffff;
@@ -22,7 +22,7 @@ section {
     overflow: hidden;
 }
 
-
+/* navbarin hommaa pääasiassa */
 .header {
     position: fixed;
     top: 0;
@@ -80,7 +80,7 @@ section {
     margin-left: .25rem;
 }
 
-
+/* "oma profiili ->" nappi */
 #nappi {
     color: var(--color-text-primary);
     padding: .60rem 1.25rem;
@@ -94,7 +94,7 @@ section {
     transform: scale(1.05);
 }
 
-
+/* responsiivisuus asetuksissa tulee esille jos puhelin resoluutiolla käyttäjä */
 .menu-icon {
     display: none;
 }
@@ -105,7 +105,7 @@ section {
     transform: scale(1, 1);
 }
 
-
+/* ensimmäisen sektionin taustakuva, tehty photoshopilla itse siniseksi ja himmennystä */
 .first {
     background-image: url(../public/markkinat.png);
     background-size: cover;
@@ -127,7 +127,7 @@ section {
     background: rgba(0,0,0,0.55);
     pointer-events: none;
 }
-
+/* laatikko tekstille */
 .teksti {
     width: 100%;
     max-width: 40rem;
@@ -140,14 +140,14 @@ section {
     color: var(--color-background);
     margin-bottom: 2vh;
 }
-
+/* iso vuosittais toripäivä teksti */
 .teksti h1 {
     font-size: 3rem;
     margin-left: 1vw;
     display: flex;
     align-items: center;
 }
-
+/* lue lisää nappi tyyli */
 .teksti a {
     text-decoration: none;
     color: var(--color-background);
@@ -171,13 +171,13 @@ section {
     margin-left: .5vw;
 }
 
-
+/* toisen sektionin taustavärin asetus */
 .second {
     padding: 80px 0;
     background: var(--color-background2);
     backdrop-filter: blur(2px);
 }
-
+/* toisen sektionin rääsää */
 .contti {
     width: 85%;
     max-width: 1100px;
@@ -215,7 +215,7 @@ section {
     transform: scale(1.05);
 }
 
-
+/* info korttien tyylejä */
 .info-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -223,7 +223,7 @@ section {
     padding-top: 2.5vh;
     
 }
-
+/*  korttien tyylit */
 .card {
     background: var(--color-surface);
     padding: 18px 22px;
@@ -251,14 +251,14 @@ section {
     padding: 6px 0;
     border-bottom: 1px solid rgba(0,0,0,0.08);
 }
-
+/* huomautus että voi aikatauluja muokata vielä */
 .huomautus {
     margin-top: 20px;
     font-size: 0.95rem;
     opacity: 0.8;
 }
 
-
+/* footeri */
 .site-footer {
     background-color: var(--color-surface);
     border-top: 1px solid var(--color-border);
@@ -378,7 +378,7 @@ button {
     color: var(--color-text-primary);
 }
 
-
+/* inputti boxit */
 .auth-box input,
 .dashboard-box input {
     width: 100%;
@@ -406,7 +406,7 @@ button {
     align-items: center;
     padding: 60px 20px;
 }
-
+/* login page ja registerinki boxit */
 .auth-box {
     width: 100%;
     max-width: 460px;
@@ -503,7 +503,7 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-
+/*  dashboardin "cardit" joissa voi muokata tietoja */
 .dash-card {
     background: white;
     padding: 20px;
@@ -518,7 +518,7 @@ button {
     color: var(--color-text-primary)
 }
 
-
+/* dashboard profiilikuvan näkymisrajoitukset */
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -585,7 +585,7 @@ button {
     background: var(--color-accent);
 }
 
-
+/*  admin pagen asetuksia */
 .dashboard-box {
     max-width: 1000px;
     margin: 50px auto;
@@ -656,7 +656,7 @@ table img {
 
 
 
-
+/* vähän sattumoisin laitettuja media queryjä responsiivisuutta varten */
 @media (max-width: 768px) {
     .map-container {
         width: 100%;
@@ -695,7 +695,7 @@ table img {
     .map-container {
         width: 100vw;
     }
-
+/* Puhelin navbar */
     .navbar {
         flex-direction: column;
         background-color: var(--color-surface);

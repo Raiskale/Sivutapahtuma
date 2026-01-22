@@ -16,7 +16,7 @@
 
         
         <div class="info-cards">
-
+            <!-- info kortit -->
             <div data-aos="fade-up" data-aos-duration="800" class="card active">
                 <h3>Esiintyjät</h3>
                 <div  class="card-content">

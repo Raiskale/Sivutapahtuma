@@ -28,6 +28,7 @@
         <p>Yhteystiedot: <a href="mailto:info@toripaiva.fi">info@toripaiva.fi</a></p>
     </div>
 </footer>
+<!-- Animaatioille AOS -->
    <script>
     AOS.init();
   </script>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-
+<!-- navbaria -->
 <header class="header">
     <div class="logo">
         <a href="index.php">

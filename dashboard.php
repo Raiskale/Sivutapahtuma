@@ -150,7 +150,7 @@ if (isset($_POST['update_participation'])) {
 
     <div class="dashboard-grid">
 
-      
+     <!-- ensimmäinen kortti dashboardissa -->
         <div class="dash-card">
             <h3>Profiili</h3>
 
@@ -167,7 +167,7 @@ if (isset($_POST['update_participation'])) {
             </form>
         </div>
 
-       
+     <!-- Dashboard turvallisuus asetuksien muokkaus -->
         <div class="dash-card">
             <h3>Turvallisuus</h3>
             <form method="POST">
@@ -178,7 +178,7 @@ if (isset($_POST['update_participation'])) {
             </form>
         </div>
 
-    
+    <!-- tapahtumaan osallistumis kortti -->
         <div class="dash-card">
             <h3>Tapahtuma</h3>
             <form method="POST">
@@ -190,7 +190,7 @@ if (isset($_POST['update_participation'])) {
             </form>
         </div>
 
-       
+       <!-- Jos käyttäjällä admin rooloi niin näkyy admin dashboardiin linkki -->
         <?php if ($user['role'] === 'admin'): ?>
         <div class="dash-card admin-card">
             <h3>Admin</h3>

@@ -101,6 +101,7 @@ $result = $conn->query("SELECT * FROM users ORDER BY id ASC");
         <tbody>
         <?php while ($u = $result->fetch_assoc()): ?>
             <tr>
+                <!-- admininille hallintaa -->
                 <form method="POST" enctype="multipart/form-data">
                     <td>
                         <?= $u['id'] ?>
